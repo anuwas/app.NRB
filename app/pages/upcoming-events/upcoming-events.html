@@ -1,0 +1,31 @@
+<ion-view view-title="Upcoming Events" hide-back-button="true">
+  <ion-content class="list card upcoming">
+    <ion-row>
+      <button secondary menuToggle>=</button>
+      <ion-title>Upcoming Events</ion-title>
+    </ion-row>
+    <ion-card *ngFor="let event of upcomingEventList"> 
+	  <img class="full-image" [src]="event.eventImage">
+      <ion-card-content>
+        <p>{{event.eventName}}</p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <button primary clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>{{event.likes}} Likes</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button primary clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>{{event.comments}} Comments</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <ion-note>{{event.eventDate}}</ion-note>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-content>
+</ion-view>

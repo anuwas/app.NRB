@@ -1,0 +1,50 @@
+<ion-view view-title="Dashboard" hide-back-button="true">
+
+<ion-content class="dash">
+  
+
+<ion-row>
+<button secondary menuToggle>=</button>
+<ion-title>Netaji Research Bureau</ion-title>
+</ion-row>
+
+  
+  <ion-slides #mySlider [options]="mySlideOptions">
+   <ion-slide *ngFor="let event of eventList">
+      <div class = "box box1">
+         <img class="full-image" [src]="event.eventImage" alt="">
+      </div>
+   </ion-slide>   
+</ion-slides>
+  
+<ion-list padding>
+
+<button ion-item (click)="upcomingEvents()">
+      <ion-icon name="calendar"></ion-icon>
+      Upcoming Events
+</button>
+<button ion-item (click)="pastEvents()">
+      <ion-icon name="calendar"></ion-icon>
+    Past Events
+</button>
+
+</ion-list>
+<ion-list padding>
+<button ion-item (click)="launch('http://netaji.org/bookstore/')">
+      <ion-icon name="cart"></ion-icon>
+      Online Store
+</button>
+<button ion-item (click)="contactUs()">
+      <ion-icon name="call"></ion-icon>
+      Contact Us
+</button>
+
+
+</ion-list>
+    
+  </ion-content>
+</ion-view>
+
+
+
+

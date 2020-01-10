@@ -1,0 +1,48 @@
+
+  
+<ion-footer class="footer">
+    <a class="tab-item" (click)="login()"><i class="icon ion-unlocked"></i><ion-icon name="lock"></ion-icon></a>
+    <a class="tab-item active" (click)="signup()"> <i class="icon ion-person"></i><ion-icon name="person"></ion-icon></a>
+</ion-footer>
+  
+
+<ion-view view-title="Sign Up" class="loginBg" hide-nav-bar="true" >
+  <ion-content padding>
+
+  <div class="row responsive-sm padding remvoeBP">
+	  <div class="col">
+		   <div class="app-logo"><img src="img/logo.png"></div>
+            
+            
+            <ion-list>
+
+              <ion-item>
+                <ion-label fixed>Username</ion-label>
+                <ion-input type="text" value="" [(ngModel)]="fullName"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label fixed>Email</ion-label>
+                <ion-input type="email" value="" [(ngModel)]="email"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label fixed>Phone</ion-label>
+                <ion-input type="phone" value="" [(ngModel)]="phoneNumber"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label fixed>Password</ion-label>
+                <ion-input type="password" [(ngModel)]="password"></ion-input>
+              </ion-item>
+            
+            </ion-list>
+            <button block danger (click)="registerUser()">Register</button>
+
+	  </div>
+  </div>
+
+<ion-row>
+<button block outline ng-click="facebookSignIn()"><ion-icon name="logo-facebook"></ion-icon></button>
+<button block outline ng-click="twitterSignIn()"><ion-icon name="logo-googleplus"></ion-icon></button>
+</ion-row>
+
+  </ion-content>
+</ion-view>

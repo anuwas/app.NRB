@@ -1,0 +1,27 @@
+<!--
+  Generated template for the GalleryPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content class="gallery">
+  
+    <ion-row>
+      <button secondary menuToggle>=</button>
+      <ion-title>Gallery</ion-title>
+    </ion-row>
+  
+  <ion-side-menus padding>
+    <ion-side-menu side="left">
+      <header class="bar bar-header bar-stable"></header>
+      <ion-content class="has-header mymenu">
+        <ion-list>
+          <ion-item *ngFor="let image of imageList" nav-clear menu-close> 
+			<img [src]="image.imagePath" />
+		  </ion-item>          
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+</ion-content>

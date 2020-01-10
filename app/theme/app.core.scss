@@ -1,0 +1,53 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+
+@import "../pages/signin/signin";
+@import "../pages/signup/signup";
+@import "../pages/dashboard/dashboard";
+@import "../pages/upcoming-events/upcoming-events";
+@import "../pages/past-events/past-events";
+@import "../pages/contact-us/contact-us";
+@import "../pages/netaji/netaji";
+@import "../pages/nrb/nrb";
+@import "../pages/gallery/gallery";
+@import "../pages/logout/logout";
+@import "../pages/menu/menu";
+@import "../pages/netaji-early-life/netaji-early-life";
+@import "../pages/netaji-as-leader-of-congress/netaji-as-leader-of-congress";
+@import "../pages/netaji-as-leader-of-the-ina/netaji-as-leader-of-the-ina";
+@import "../pages/history/history";
+@import "../pages/aims/aims";
+@import "../pages/museum/museum";
+
+
+
+
+.loginBg{
+
+background: rgba(73,155,234,1);
+background: -moz-linear-gradient(left, rgba(217,217,217,1) 0%, rgba(234,234,234,1) 45%, rgba(217,217,217,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(217,217,217,1)), color-stop(45%, rgba(234,234,234,1)), color-stop(100%, rgba(217,217,217,1)));
+background: -webkit-linear-gradient(left, rgba(217,217,217,1) 0%, rgba(234,234,234,1) 45%, rgba(234,234,234,1) 100%);
+background: -o-linear-gradient(left, rgba(217,217,217,1) 0%, rgba(234,234,234,1) 45%, rgba(234,234,234,1) 100%);
+background: -ms-linear-gradient(left, rgba(217,217,217,1) 0%, rgba(234,234,234,1) 45%, rgba(234,234,234,1) 100%);
+background: linear-gradient(to right, rgba(217,217,217,1) 0%, rgba(234,234,234,1) 45%, rgba(234,234,234,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D9D9D9', endColorstr='#EAEAEA', GradientType=1 );
+
+}
+
+.app-logo{ max-width:130px; margin:auto; background-repeat:no-repeat;background-position:center;}
+.top-content { padding-top: 10vh;  text-align: center; }
+.loginButton{ padding-bottom:0px;}
+.remvoeBP{ padding-bottom:0px;}
+.removePM{ margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; }
+
+#menuLinks .list .item{ border-color:#fff;}
+#menuLinks .list .item a{ background:#797979; color:#fff;}
+
+.full-width{ width: 100%; }

@@ -1,0 +1,52 @@
+
+
+<ion-view view-title="Contact Us" hide-back-button="true">
+
+  <ion-content class="contact">
+
+<ion-row>
+<button secondary menuToggle>=</button>
+<ion-title>Contact Us</ion-title>
+</ion-row>
+
+<ion-list padding>
+
+  <ion-item>
+    <ion-label stacked>Full Name</ion-label>
+    <ion-input type="text" [(ngModel)]="fullName"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Email</ion-label>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Phone</ion-label>
+    <ion-input type="phone" [(ngModel)]="phoneNmber"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Comments</ion-label>
+    <ion-input type="text" [(ngModel)]="comments"></ion-input>
+  </ion-item>
+  <button block secondary (click)="contactUs()">Submit</button>
+
+</ion-list>
+
+
+<ion-card padding>
+  <ion-card-header>
+    Contact Us
+  </ion-card-header>
+  <ion-card-content>
+NETAJI BHAWAN<br>
+38/2, Lala Lajpat Rai (Elgin) Sarani<br>
+Kolkata- 700 020, West Bengal, India<br>
+Phone: + 91 33 2486 8139<br>
+Fax: + 91 33 2486 8070<br>
+Email: nrbkolkata@gmail.com<br>
+Web: www.netaji.org
+  </ion-card-content>
+</ion-card>
+
+
+  </ion-content>
+</ion-view>
